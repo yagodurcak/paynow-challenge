@@ -1,0 +1,60 @@
+PAYNOW es una aplicación web diseñada para la gestión y visualización de transacciones financieras. Este proyecto utiliza Next.js como framework principal y está desarrollado siguiendo las mejores prácticas de frontend con TypeScript.
+
+Tabla de contenidos
+Instalación
+Scripts Disponibles
+Estructura del Proyecto
+Principales Tecnologías
+
+Sigue los pasos a continuación para configurar el proyecto en tu entorno local:
+
+Clona el repositorio:
+
+bash
+Copiar código
+git clone https://github.com/yagodurcak/PAYNOW.git
+cd PAYNOW
+Instala las dependencias:
+
+bash
+Copiar código
+npm install
+npm run dev
+Abre tu navegador en http://localhost:3000.
+
+Scripts Disponibles
+En el proyecto puedes ejecutar los siguientes scripts:
+
+npm run dev: Inicia el servidor en modo desarrollo.
+npm run build: Genera una build optimizada para producción.
+npm start: Inicia el servidor en modo producción.
+npm run lint: Ejecuta el linter para identificar problemas en el código.
+npm test: Corre los tests del proyecto.
+Estructura del Proyecto
+El repositorio tiene la siguiente estructura:
+
+plaintext
+Copiar código
+PAYNOW/
+├── pages/              # Rutas y páginas de Next.js
+│   ├── api/            # Endpoints de la API
+│   ├── index.tsx       # Página principal
+│   └── ...             # Otras páginas
+├── components/         # Componentes reutilizables
+│   ├── tables/         # Componentes de tablas (e.g., TransactionsTable)
+│   └── ...             # Otros componentes
+├── hooks/              # Custom hooks (e.g., useTransactions)
+├── types/              # Definiciones de tipos TypeScript
+├── styles/             # Estilos globales y módulos CSS
+├── public/             # Recursos públicos (imágenes, íconos, etc.)
+├── .env.local          # Variables de entorno
+├── package.json        # Dependencias y scripts del proyecto
+├── tsconfig.json       # Configuración de TypeScript
+└── README.md           # Documentación del proyecto
+Principales Tecnologías
+El proyecto utiliza las siguientes tecnologías:
+
+Next.js: Framework React para aplicaciones web modernas.
+TypeScript: Tipado estático para un desarrollo más robusto.
+React: Biblioteca para construir interfaces de usuario.
+Tailwind
