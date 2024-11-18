@@ -1,14 +1,13 @@
 import { Box, Button, CircularProgress } from "@mui/material";
-import AddTransactionForm from "./components/froms/AddTransactionForm";
-import DateFilter from "./components/filters/DateFilter";
-import Header from "./components/layout/Header";
-import TargetAmountFilter from "./components/filters/TargetAmountFilter";
-import TransactionsTable from "./components/tables/TransactionsTable";
-import {useTransactions} from "../hooks/useTransactions";
-import { Transaction } from "../types/types";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
+import { useTransactions } from "../hooks/useTransactions";
+import { Transaction } from "../types/types";
+import DateFilter from "./components/filters/DateFilter";
+import TargetAmountFilter from "./components/filters/TargetAmountFilter";
+import AddTransactionForm from "./components/forms/AddTransactionForm";
+import Header from "./components/layout/Header";
+import TransactionsTable from "./components/tables/TransactionsTable";
 
 export default function Home() {
   const [open, setOpen] = useState(false);

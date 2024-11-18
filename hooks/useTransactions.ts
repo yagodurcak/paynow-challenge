@@ -29,11 +29,11 @@ export const useTransactions = () => {
 
   const checkTargetAmount = (targetAmount: number) => {
     let found = false;
-    for (let i = 0; i < transactions.length; i++) {
-      for (let j = i + 1; j < transactions.length; j++) {
-        if (transactions[i].amount + transactions[j].amount === targetAmount) {
+    for (let i = 0; i < filteredTransactions.length; i++) {
+      for (let j = i + 1; j < filteredTransactions.length; j++) {
+        if (filteredTransactions[i].amount + filteredTransactions[j].amount === targetAmount) {
           setResult(
-            `Transacciones que coinciden: ${transactions[i].id} y ${transactions[j].id}`
+            `Transacciones que coinciden: ${filteredTransactions[i].id} y ${filteredTransactions[j].id}`
           );
           found = true;
           break;

@@ -25,14 +25,6 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
     }).format(amount);
   };
 
-  const formatDate = (date: string) => {
-    return new Date(date).toLocaleDateString("es-AR", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  };
-
   return (
     <TableContainer component={Paper} aria-label="Tabla de transacciones">
       <Table>
